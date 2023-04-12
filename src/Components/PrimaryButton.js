@@ -9,6 +9,7 @@ function PrimaryButton(props) {
     const Button = styled.div`
         background: #3B82F6;
         border-radius: 24px;
+        min-height: 36px;
         min-width: 216px;
         color: white;
         &:hover {

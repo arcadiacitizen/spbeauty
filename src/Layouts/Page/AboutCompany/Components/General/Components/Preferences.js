@@ -16,7 +16,7 @@ const Container = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  margin-top: 16px;
+  margin-top: 15px;
 `;
 
 function Preferences() {
