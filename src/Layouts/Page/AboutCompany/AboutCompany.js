@@ -12,7 +12,7 @@ function AboutCompany() {
             <General /> {/* Основная информация вроде названия, типа и телефона */}
           </div>
           <div className="position-relative ms-5" style={{width: "100%", height: "100%"}}>
-            <Addresses style={{position: "absolute", top: 0, right: 0, bottom: 0, left: 0}}/> {/* Список доступных адресов заведений */}
+            <Addresses style={{position: "absolute", top: 0, right: "135px", bottom: 0, left: 0}}/> {/* Список доступных адресов заведений */}
           </div>
         </div>
       </div>
