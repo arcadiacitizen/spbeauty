@@ -7,18 +7,34 @@ import IconOnlyButton from '../../../../../Components/IconOnlyButton.js';
 const Option = styled.div`
     outline: none;
     border-radius: 0px;
-    border: solid #152842 1px;
-    background-color: #D9E2EF;
-    color: #666787;
+    background-color: white;
+    width: 446px;
+    color: #0F172A;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px;
+`;
+
+const Text = styled.div`
+    flex: 1;
+    color: #0F172A;
+`;
+
+const IconWrapper = styled.div`
+    margin-left: 6px;
 `;
 
 function ListElement(props) {
     return (
-        <div className='d-flex flex-row align-items-center align-self-stretch gap-2'>
-            <Option className='flex-grow-1 p-2'>{props.children}</Option>
-            <SecondaryButton minWidth='0'>Ред.</SecondaryButton>
-            <SecondaryButton minWidth='0'>Удл.</SecondaryButton>
-        </div>
+        <Option>
+            <Text>{props.children}</Text>
+            <IconWrapper>
+                <IconOnlyButton icon={<EditIcon />} />
+            </IconWrapper>
+            <IconWrapper>
+                <IconOnlyButton icon={<RemoveIcon />} />
+            </IconWrapper>
+        </Option>
     );
 }
 
